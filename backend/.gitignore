@@ -1,0 +1,31 @@
+# Python / Django #
+###################
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+# Replace 'venv' with the name of your environment folder (e.g., env, .venv)
+../env/
+
+# Django project settings
+# Never commit your secret keys or local settings!
+.env
+local_settings.py
+
+# Database files
+db.sqlite3
+db.sqlite3-journal
+
+# User-uploaded media files
+media/
+
+# Collected static files for deployment
+static_root/
+staticfiles/
+
+# Log files
+*.log

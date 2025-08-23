@@ -1,0 +1,124 @@
+.meal-planner-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.meal-planner-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Add Meal Form Styles */
+.add-meal-form {
+    background-color: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.add-meal-form h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.add-meal-form form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.add-meal-form select,
+.add-meal-form button {
+    padding: 10px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.add-meal-form button {
+    background-color: #2d3748;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-meal-form button:hover {
+    background-color: #4a5568;
+}
+
+.error-message {
+    color: #e53e3e;
+    margin-top: 1rem;
+}
+
+/* Weekly Grid Styles */
+.weekly-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.day-column {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.day-column h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.meal-slot {
+    margin-bottom: 1rem;
+}
+
+.meal-slot h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.meal-card {
+    background-color: #edf2f7;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty-slot {
+    background-color: #f7fafc;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #a0aec0;
+    text-align: center;
+    border: 1px dashed #e2e8f0;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #c53030;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 5px;
+}

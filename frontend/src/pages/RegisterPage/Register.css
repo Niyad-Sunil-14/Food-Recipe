@@ -1,0 +1,139 @@
+/* New Wrapper Class for Auth Pages */
+.auth-page-wrapper {
+    background: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adds some space on smaller screens */
+    box-sizing: border-box;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-container p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 15px;
+}
+
+/* Input Fields & Labels */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #4CAF50; /* A nice green to match the food theme */
+}
+
+/* Options (Remember Me / Forgot Password) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Adjust top margin for better spacing */
+    margin-bottom: 25px;
+    font-size: 14px;
+    padding: 0 5px; /* Add some padding on the sides */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #45a049;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #FFD95A;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Form Footer */
+.form-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 25px;
+    }
+}
