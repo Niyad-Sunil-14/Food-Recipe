@@ -9,7 +9,7 @@ __pycache__/
 
 # Virtual environment
 # Replace 'venv' with the name of your environment folder (e.g., env, .venv)
-../env
+../env/
 
 # Django project settings
 # Never commit your secret keys or local settings!
