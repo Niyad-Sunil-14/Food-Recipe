@@ -14,6 +14,9 @@ from pathlib import Path
 import os
 from datetime import timedelta
 import dj_database_url
+from dotenv import load_dotenv
+
+load_dotenv()  # Loads variables from .env into the environment
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,12 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-qe)pn)!+m98r$u5c0ctblbbdhhl&1hm6_jpsu_jea2dpt)9kt$'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-backend-name.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://food-recipe-backend-hntt.onrender.com', '127.0.0.1']
 
 
 # Application definition
@@ -156,5 +159,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173", # The origin of your React app
-    "http://127.0.0.1:5173",
+    "https://food-recipe-virid.vercel.app/",
 ]

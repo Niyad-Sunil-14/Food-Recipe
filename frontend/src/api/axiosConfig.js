@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api/', // Your Django API base URL
+    baseURL: 'https://food-recipe-backend-hntt.onrender.com/api/', // Your Django API base URL
     timeout: 5000,
     headers: {
         'Content-Type': 'application/json',
