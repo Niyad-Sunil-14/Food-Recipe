@@ -159,5 +159,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173", # The origin of your React app
-    "https://food-recipe-virid.vercel.app/",
+    "https://food-recipe-virid.vercel.app",
 ]
